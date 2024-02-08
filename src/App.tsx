@@ -5,14 +5,16 @@ import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Projects from './pages/projects/Projects'
 import Contact from './pages/contact/Contact'
+import Experience from './pages/experience/Experience'
 
 const App = (): ReactElement => {
 
   return (
-    <div className=''>
+    <div className='bg-gray-800'>
       <Header />
       <Home />
       <About />
+      <Experience />
       <Projects />
       <Contact />
       <Footer />

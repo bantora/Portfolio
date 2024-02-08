@@ -3,7 +3,7 @@ import Section from '../../components/section/Section';
 
 const Projects = (): ReactElement => {
 	return (
-		<Section>
+		<Section id='projects'>
 			<div className=''>Projects</div>
 		</Section>
 	)

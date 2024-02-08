@@ -1,25 +1,59 @@
 import type { ReactElement } from "react";
 
+import { useState, useEffect } from 'react';
+
 const Header = (): ReactElement => {
+
+	const [scrollPos, setScrollPos] = useState<number>(window.scrollY);
+	const [visible, setVisible] = useState<boolean>(true);
+	const [atTop, setAtTop] = useState(false);
+
 	const scrollToElement = (el: string) => {
 		const element = document.getElementById(el);
 		if (element) element.scrollIntoView({ behavior: "smooth" });
 	};
+
+	useEffect(() => {
+
+		if (scrollPos === 0) {
+			setAtTop(false);
+		} else {
+			setAtTop(true)
+		}
+
+		const handleScroll = () => {
+			const currentScrollPos = window.scrollY;
+			const isScrollingDown = scrollPos < currentScrollPos;
+
+			setScrollPos(currentScrollPos);
+
+			setVisible(!isScrollingDown);
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, [scrollPos])
+
 	return (
 		<div className="">
-			<div className="flex justify-between h-16 items-center mx-16 ">
-				<div className="">
-					<a href="http://localhost:5173/">R</a>
+			<div id="header" className={`fixed top-0 left-0 w-full ${visible ? 'flex' : 'hidden'} justify-between h-16 items-center px-16 ${atTop && 'shadow'} bg-opacity-95 backdrop-blur-sm `}>
+
+				<div className="flex items-center justify-center h-10 w-10 bg-teal-900 rounded-md shadow-md text-teal-100 text-sm font-semibold border border-gray-300  animate-bounce hover:animate-spin">
+					<a href="#" className="flex items-center justify-center h-full w-full">R</a>
 				</div>
+
 				<div className="flex space-x-4">
 					<a href="#about" onClick={() => scrollToElement('about')}>1. About</a>
-					<a href="">2. Experience</a>
-					<a href="">3. Projects</a>
-					<a href="">4. Contact</a>
+					<a href="#experience">2. Experience</a>
+					<a href="#projects">3. Projects</a>
+					<a href="#contact">4. Contact</a>
 					<button className="outline outline-2 outline-offset-2">Resume</button>
 				</div>
 			</div>
-		</div>
+		</div >
 	)
 }
 

@@ -3,8 +3,8 @@ import Section from '../../components/section/Section';
 
 const About = (): ReactElement => {
 	return (
-		<Section>
-			<div id='about' className=''>About</div>
+		<Section id='about'>
+			<div className=''>About</div>
 		</Section>
 	)
 }

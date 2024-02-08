@@ -1,14 +1,14 @@
 import type { ReactElement } from 'react';
 import Section from '../../components/section/Section';
 
-const Contact = (): ReactElement => {
-	const id = 'contact'
+const Experience = (): ReactElement => {
+	const id = 'experience'
 
 	return (
 		<Section id={id}>
-			<div id={id} className=''>Contact</div>
+			<div id={id} className=''>Experience</div>
 		</Section>
 	)
 }
 
-export default Contact;
+export default Experience;
