@@ -8,11 +8,6 @@ const Header = (): ReactElement => {
 	const [visible, setVisible] = useState<boolean>(true);
 	const [atTop, setAtTop] = useState(false);
 
-	const scrollToElement = (el: string) => {
-		const element = document.getElementById(el);
-		if (element) element.scrollIntoView({ behavior: "smooth" });
-	};
-
 	useEffect(() => {
 
 		if (scrollPos === 0) {
