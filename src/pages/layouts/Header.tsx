@@ -45,12 +45,12 @@ const Header = (): ReactElement => {
 					<a href="#" className="flex items-center justify-center h-full w-full">R</a>
 				</div>
 
-				<div className="flex space-x-4">
-					<a href="#about" onClick={() => scrollToElement('about')}>1. About</a>
-					<a href="#experience">2. Experience</a>
-					<a href="#projects">3. Projects</a>
-					<a href="#contact">4. Contact</a>
-					<button className="outline outline-2 outline-offset-2">Resume</button>
+				<div className="flex space-x-10 ">
+					<a href="#about" className="text-teal-100 hover:text-teal-400">About</a>
+					<a href="#experience" className="text-teal-100 hover:text-teal-400">Experience</a>
+					<a href="#projects" className="text-teal-100 hover:text-teal-400">Projects</a>
+					<a href="#contact" className="text-teal-100 hover:text-teal-400">Contact</a>
+					<button className="outline outline-2 outline-offset-2 rounded-md px-2 text-teal-100 hover:text-teal-400 animate-pulse">Resume</button>
 				</div>
 			</div>
 		</div >
