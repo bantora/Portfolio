@@ -6,6 +6,7 @@ import About from './pages/about/About'
 import Projects from './pages/projects/Projects'
 import Contact from './pages/contact/Contact'
 import Experience from './pages/experience/Experience'
+import SideBar from './pages/layouts/SideBar'
 
 const App = (): ReactElement => {
 
@@ -13,6 +14,7 @@ const App = (): ReactElement => {
     <div className='bg-gray-800 scroll-smooth'>
       <Header />
       <Home />
+      <SideBar />
       <About />
       <Experience />
       <Projects />

@@ -33,7 +33,7 @@ const Header = (): ReactElement => {
 	}, [scrollPos])
 
 	return (
-		<div className="">
+		<div className="z-50">
 			<div id="header" className={`fixed top-0 left-0 w-full ${visible ? 'flex' : 'hidden'} justify-between h-16 items-center px-16 ${atTop && 'shadow'} bg-opacity-95 backdrop-blur-sm `}>
 
 				<div className="flex items-center justify-center h-10 w-10 bg-teal-900 rounded-md shadow-md text-teal-100 text-sm font-semibold border border-gray-300  animate-bounce hover:animate-spin">
