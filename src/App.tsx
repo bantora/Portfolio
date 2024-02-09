@@ -10,7 +10,7 @@ import Experience from './pages/experience/Experience'
 const App = (): ReactElement => {
 
   return (
-    <div className='bg-gray-800'>
+    <div className='bg-gray-800 scroll-smooth'>
       <Header />
       <Home />
       <About />
