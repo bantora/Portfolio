@@ -5,7 +5,7 @@ interface SectionProps extends PropsWithChildren {
 }
 
 const Section = ({ children, id }: SectionProps): ReactElement => {
-	return <div id={id} className="flex justify-center items-center h-screen w-screen" >{children}</div>
+	return <div id={id} className="flex justify-center items-center h-screen" >{children}</div>
 }
 
 export default Section;

@@ -5,7 +5,7 @@ const Contact = (): ReactElement => {
 
 	return (
 		<Section id='contact'>
-			<div className='flex space-x-8 align-middle justify-center'>
+			<div className='flex space-x-8 align-middle justify-center w-4/6'>
 
 				<div className='flex flex-col justify-center space-y-6 align-middle'>
 					<div className='text-teal-100 text-5xl font-extrabold'>Got a project idea or just want to say hi?</div>
