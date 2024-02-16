@@ -48,7 +48,7 @@ const Header = (): ReactElement => {
 					<button className="outline outline-2 outline-offset-2 rounded-md px-2 text-teal-100 hover:text-teal-400 animate-pulse">Resume</button>
 				</div>
 			</div>
-		</div >
+		</div>
 	)
 }
 
