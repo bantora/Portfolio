@@ -79,7 +79,7 @@ const Projects = (): ReactElement => {
 					<a target='_blank' href={projectImages[index].links.website} className="ml-5 text-teal-600 hover:text-teal-400 pl-1 hover:underline hover:underline-offset-2 font-bold"> @{projectImages[index].title}</a>
 					<div onClick={handleClickRepository} className={`animate-bounce ${pulse ? 'animate-ping' : ''} cursor-pointer`}><FaGithubSquare /></div>
 				</div>
-				<div style={{ backgroundImage: `url("${projectImages[index].url}")`, }} className='flex justify-between content-center h-full w-full rounded-2xl bg-center bg-contain bg-no-repeat duration-500 group'>
+				<div style={{ backgroundImage: `url("${projectImages[index].url}")`, }} className='flex justify-between content-center h-full w-full rounded-2xl bg-center bg-contain bg-no-repeat duration-1000 group'>
 					<div className='cursor-pointer hidden flex-col justify-center group-hover:flex text-teal-200 ml-48'>
 						<HiChevronDoubleLeft onClick={handlePrevSlide} size={50} />
 					</div>
