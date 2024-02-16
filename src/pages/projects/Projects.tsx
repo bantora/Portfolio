@@ -6,6 +6,9 @@ import { HiChevronDoubleLeft, HiChevronDoubleRight } from 'react-icons/hi';
 import { FaGithubSquare } from "react-icons/fa";
 
 import Section from '../../components/section/Section';
+import CoffeeShop from '../../assets/CoffeeShop.png';
+import GuessTheNumber from '../../assets/GuessTheNumber.png';
+import PigGame from '../../assets/PigGame.png';
 
 const Projects = (): ReactElement => {
 
@@ -15,7 +18,7 @@ const Projects = (): ReactElement => {
 	const projectImages = [
 		{
 			title: 'Coffee Shop',
-			url: 'src/assets/CoffeeShop.png',
+			url: CoffeeShop,
 			summary: '',
 			links: {
 				website: 'https://bantora.github.io/CoffeeShop/',
@@ -25,7 +28,7 @@ const Projects = (): ReactElement => {
 		},
 		{
 			title: 'Guess The Number',
-			url: 'src/assets/GuessTheNumber.png',
+			url: GuessTheNumber,
 			summary: 'A project created under the course of Jonas Schmedtmann, The Complete JavaScript Course',
 			links: {
 				website: 'https://bantora.github.io/guess-the-number/',
@@ -36,7 +39,7 @@ const Projects = (): ReactElement => {
 		},
 		{
 			title: 'Pig Game',
-			url: 'src/assets/PigGame.png',
+			url: PigGame,
 			summary: 'A project created under the course of Jonas Schmedtmann, The Complete JavaScript Course',
 			links: {
 				website: 'https://bantora.github.io/pig-game/',
