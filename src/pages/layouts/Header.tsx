@@ -45,7 +45,7 @@ const Header = (): ReactElement => {
 					<a href="#experience" className="text-teal-100 hover:text-teal-400">Experience</a>
 					<a href="#projects" className="text-teal-100 hover:text-teal-400">Projects</a>
 					<a href="#contact" className="text-teal-100 hover:text-teal-400">Contact</a>
-					<button className="outline outline-2 outline-offset-2 rounded-md px-2 text-teal-100 hover:text-teal-400 animate-pulse">Resume</button>
+					<a href="https://docs.google.com/document/d/1KFXOexs3xn7McxjkplR1ZR_UNH1_f5EJbP70fI5IQ1M/export?format=pdf" download='RyanPaoloJoson_CV' className="outline outline-2 outline-offset-2 rounded-md px-2 text-teal-100 hover:text-teal-400 animate-pulse">Resume</a>
 				</div>
 			</div>
 		</div>
